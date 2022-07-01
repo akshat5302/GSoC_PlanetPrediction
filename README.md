@@ -6,9 +6,9 @@
 ## Application Containerization
 - Then I containerized my Flask App and created its image using DockerFile and deployed it on DockerHub<br /> 
   Cmd to push the image - `docker push akshat5302/planet_pred:tagname`
-## Creating K3S Cluster for My Flask App
+## Deploying My Flask App on k3s cluster of Rancher
 - For this Step I Created 2 Files `deployment.yaml` and `service.yaml`
-- And runned them using cmd - `kubectl apply -f deployment.yaml` and `kubectl apply -f service.yaml`
+- And runned them using cmd - `kubectl apply -f deployment.yaml` and `kubectl apply -f service.yaml` on k3s cluster
 - Now I'm able to access my app inside KVM using `NodeIP:Nodeport`
 - For the next phase I Added ` 172.16.230.162 mcm.rancher.aiic.suse` on /etc/hosts/ file of my local machine 
 ## Creating Namespace 
