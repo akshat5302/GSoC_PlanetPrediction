@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: planet-prediction-app
+  labels:
+    app: planet-prediction-app
+spec:
+  ports:
+  - port: 5000
+    targetPort: 5000
+  selector:
+    app: planet-prediction-app
+  type: LoadBalancer
+
+
